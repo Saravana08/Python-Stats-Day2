@@ -1,0 +1,40 @@
+newDF = pd.DataFrame() #creates a new dataframe that's empty
+newDF = newDF.append(oldDF, ignore_index = True) # ignoring index is optional
+# try printing some data from newDF
+print newDF.head() #again optional 
+===============================================================
+df = pd.DataFrame(list) 
+df = pd.DataFrame(dictonary) 
+
+data = [{'a': 1, 'b': 2}, {'a': 5, 'b': 10, 'c': 20}] 
+df1 = pd.DataFrame(data, index =['first', 'second'], columns =['a', 'b']) 
+
+
+Name = ['tom', 'krish', 'nick', 'juli']  
+    
+# List2  
+Age = [25, 30, 26, 22]  
+    
+# get the list of tuples from two lists.  
+# and merge them by using zip().  
+list_of_tuples = list(zip(Name, Age))  
+    
+# Assign data to tuples.  
+list_of_tuples   
+  
+  
+# Converting lists of tuples into  
+# pandas Dataframe.  
+df = pd.DataFrame(list_of_tuples, columns = ['Name', 'Age'])  
+     
+# Print data.  
+df  
+====================================================
+
+
+NumPy's arrays are more compact than Python lists -- 
+a list of lists as you describe, in Python, would take at least 20 MB or so, 
+while a NumPy 3D array with single-precision floats in the cells would fit in 4 MB. 
+Access in reading and writing items is also faster with NumPy.
+
+=======================================================
